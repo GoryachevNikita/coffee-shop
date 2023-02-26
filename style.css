@@ -67,7 +67,6 @@ a:visited {
 a:hover {
 	text-decoration: none;
 	color: inherit;
-	margin-bottom: 4px;
 }
 ul li {
 	list-style: none;
