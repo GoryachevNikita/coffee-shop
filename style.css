@@ -1,0 +1,473 @@
+/*ResetCss*/
+/*1.Обнуляем отступы*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/*2.Убираем лигии обводки ссылок*/
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+	color: inherit;
+}
+/*3.Делаем основные теги блочными*/
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+/*4.Уравниваем рамеры шрифтов и элентов в структуре*/
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+/*5.Наследование тегов форм семейства шрифтов*/
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+/*6.Обнуление определенных кроссбраузерных параметров у тегов форм*/
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+/*====================================================================*/
+
+/*----------Подключаю шрифты------------------------------------*/
+@import url(//fonts.googleapis.com/earlyaccess/nats.css);
+@font-face {
+	font-family: Commic-i;
+	src: url(./fonts/comic_ittalic.ttf);
+}
+@font-face {
+	font-family: Commic;
+	src: url(./fonts/comic.ttf);
+}
+/*------------------------------------------------------------*/
+
+body {
+	font-family: "Limelight", sans-serif;
+	color: #000000;
+}
+/*------------Wrapper-Container--------------------------------*/
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	width: 100vw;
+	max-width: 1787px;
+	padding: 0px 15px;
+	margin: 0px auto;
+}
+
+/*===========HOME====================================================================*/
+.header {
+	min-height: 119px;
+	display: flex;
+	align-items: center;
+	background-color: #ffffff;
+}
+.header_home {
+	background-color: #f3f3f3;
+}
+.header__row {
+	display: flex;
+	align-items: center;
+}
+.header__text {
+	font-size: 40px;
+	line-height: 122.5%;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	white-space: nowrap;
+}
+.header__menu {
+	margin: 0px 47px 0px 423px;
+}
+@media (max-width: 1787px) {
+	.header__menu {
+		margin: 0px 15px 0px 70px;
+	}
+}
+@media (max-width: 1200px) {
+	.header__row {
+		flex-wrap: wrap;
+	}
+	.header__column {
+		flex: 0 0 100%;
+		display: flex;
+		justify-content: center;
+	}
+	.header__menu {
+		margin: 0px;
+	}
+}
+@media (max-width: 991.98px) {
+	.header__text {
+		font-size: 35px;
+	}
+}
+
+/*-----------MENU-----------------------------------------------*/
+.menu {
+}
+.menu__list {
+	display: flex;
+}
+.menu__item {
+	margin-right: 127px;
+}
+.menu__item:last-child {
+	margin: 0px;
+}
+.menu__link {
+	font-size: 24px;
+	line-height: 121%;
+}
+.menu__link:hover {
+	text-decoration: underline;
+}
+.menu__link_a {
+	text-decoration: underline;
+}
+
+@media (max-width: 1787px) {
+	.menu__item {
+		margin-right: 80px;
+	}
+}
+@media (max-width: 991.98px) {
+	.menu__list {
+		flex-direction: column;
+		align-items: center;
+	}
+	.menu__item {
+		margin: 0px 0px 10px 0px;
+	}
+}
+/*----------HOME-PAGE-IMAGE-------------------------------------------*/
+.img {
+	position: relative;
+	padding-bottom: 100%;
+}
+@media (min-width: 992px) {
+	.img {
+		padding-bottom: 75%;
+	}
+}
+.img img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+/*===========ABOUT=======================================================================*/
+/*--------ABOUT-HEADER-----------------*/
+.header__wrapper {
+	position: relative;
+	display: flex;
+	justify-content: end;
+}
+.menu-wrapper {
+	margin-right: 47px;
+}
+/*---------ABOUT-PAGE---------------*/
+.page {
+	flex-grow: 1;
+}
+.about-page__row {
+	display: flex;
+}
+.about-page__collumn {
+}
+.about-page__collumn_Big {
+	flex-grow: 1;
+}
+.about-page__item {
+	margin-left: 45px;
+}
+.title {
+	font-size: 64px;
+	line-height: 122%;
+	margin-bottom: 30px;
+}
+.about-item__text {
+	font-family: "NATS", sans-serif;
+	font-size: 28px;
+	line-height: 271%;
+	letter-spacing: 0.06em;
+	margin-bottom: 10px;
+}
+.about-item__button {
+	width: 374px;
+	background: #000000;
+	text-align: center;
+	border-radius: 31px;
+	font-family: "NATS", sans-serif;
+	color: #ffffff;
+	font-size: 38px;
+	line-height: 265%;
+	letter-spacing: 0.06em;
+}
+.button {
+}
+.about-page__img {
+}
+/*---------Footer--------------*/
+.text-wrapper {
+	display: flex;
+	justify-content: center;
+}
+.footer__text {
+	font-family: "Commic", sans-serif;
+	line-height: 142.23%;
+	letter-spacing: 0.165em;
+}
+a.footer__link {
+	font-family: "Commic-i", sans-serif;
+	color: #935959;
+}
+.footer__line {
+	height: 11px;
+	background: #461111;
+	border-radius: 14px;
+}
+/*--------------------------------*/
+/*==============MENU-PAGE==============================*/
+/*-------TITLE-----------------*/
+.menu-page__title {
+	margin-left: 45px;
+}
+/*---------------------------------*/
+/*---------MENU_ROW-------*/
+
+.menu-page__row {
+	display: flex;
+	flex-wrap: wrap;
+}
+.menu-page__collumn {
+	flex: 0 0 20%;
+	display: flex;
+	justify-content: center;
+}
+.menu-page__item {
+}
+.menu-item {
+}
+.menu-item__img {
+}
+.menu-item__title {
+	font-size: 32px;
+	line-height: 122%;
+	white-space: wrap;
+	text-align: center;
+}
+/*-----------------------------------------------------*/
+
+/*==============Reservation===========================*/
+.reserv-page__title {
+	margin-left: 45px;
+}
+.reserv-page__subtitle {
+	font-size: 24px;
+	line-height: 121%;
+	text-decoration-line: underline;
+	text-align: center;
+	margin-bottom: 104px;
+}
+a.subtitle__link {
+	color: #935959;
+}
+.reserv-form__row {
+	margin: 0px 19px 65px 19px;
+	display: flex;
+}
+.reserv-form__collumn {
+	flex-basis: 50%;
+	padding: 0px 69px;
+}
+
+.reserv-form__input-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.reserv-form__input-wrapper:not(:last-child) {
+	margin-bottom: 74px;
+}
+.reserv-form__input-title {
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.reserv-form__input {
+	flex: 0 0 100%;
+	border-bottom: 1px solid black;
+}
+.reserv-page__btn {
+	display: block;
+	width: 374px;
+	background: #461111;
+	text-align: center;
+	border-radius: 23px;
+	font-family: "NATS", sans-serif;
+	color: #ffffff;
+	font-size: 30px;
+	line-height: 240%;
+	margin: 0 auto;
+	border: 1px solid #000;
+}
+.reserv-footer__text {
+	font-family: "NATS", sans-serif;
+	font-size: 14px;
+	line-height: 230%;
+	letter-spacing: 0px;
+	margin-bottom: 27px;
+	position: relative;
+}
+
+.reserv-footer__text::before {
+	display: inline-block;
+	content: "";
+	width: 28px;
+	height: 28px;
+	background-image: url(/image/reservation/alert-triangle.svg);
+	position: absolute;
+	top: 0px;
+	left: -30px;
+}
+
+/*==============Contact===========================*/
+
+.contact-page__title {
+	margin-left: 45px;
+}
+
+.contact-page__row {
+	display: flex;
+	margin-left: 45px;
+}
+.contact-page__collumn {
+	flex-basis: 50%;
+}
+
+.input {
+	display: flex;
+	flex-wrap: wrap;
+}
+.input:not(:last-child) {
+	margin-bottom: 105px;
+	max-width: 650px;
+}
+.input__title {
+	font-size: 26px;
+	line-height: 36px;
+}
+
+.input__input {
+	border-bottom: 1px solid #000;
+	flex-basis: 100%;
+	font-size: 26px;
+	line-height: 76px;
+}
+.contact-item {
+	margin: 103px 66px 70px 183px;
+	display: flex;
+	flex-direction: column;
+	background: linear-gradient(180deg, #374151 12.43%, rgba(70, 17, 17, 0) 111.7%);
+	border-radius: 30px;
+	padding: 20px 40px;
+}
+.contact-item__title {
+	font-size: 44px;
+	line-height: 49px;
+	color: #ffffff;
+	text-align: center;
+}
+.contact-item__subtitle {
+	font-size: 36px;
+	line-height: 85px;
+	font-family: "NATS", sans-serif;
+	color: #ffffff;
+	border-bottom: 2px solid #000;
+	text-align: center;
+}
+.cotact-item__text {
+	font-size: 36px;
+	line-height: 96px;
+	font-family: "NATS", sans-serif;
+	color: #ffffff;
+	margin-top: 50px;
+	white-space: nowrap;
+}
+
+.contact-footer__wrapper {
+	display: flex;
+	justify-content: end;
+	padding-right: 66px;
+}
+.contact-footer__items {
+	display: flex;
+	margin: 0px -19px;
+}
+.contact-footer__item {
+	flex: 0 0 33.33333333%;
+	padding: 0px 19px;
+}

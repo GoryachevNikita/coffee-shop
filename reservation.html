@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scaleble=0">
+	<title>Reservation</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Limelight:regular&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<div class="menu-wrapper">
+						<nav class="menu">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="./index.html" class="menu__link">Home</a>
+								</li>
+								<li class="menu__item">
+									<a href="./about.html" class="menu__link">About</a>
+								</li>
+								<li class="menu__item">
+									<a href="./menu.html" class="menu__link">Menu</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link menu__link_a">Reservation</a>
+								</li>
+								<li class="menu__item">
+									<a href="./contact.html" class="menu__link">Contact</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="reserv-page page">
+			<div class="container">
+				<div class="reserv-page__title title">
+					<h1>Reservation</h1>
+				</div>
+				<div class="reserv-page__subtitle subtitle">
+					<a href="/index.html" class="subtitle__link">#Caffè</a> provides both online and offline table
+					reservations
+					for our customers.
+				</div>
+				<form action="#" method="get" class="reserv-page__form reserv-form">
+					<div class="reserv-form__row">
+						<div class="reserv-form__collumn">
+							<div class="reserv-form__input-wrapper">
+								<p class="reserv-form__input-title">Name:</p>
+								<img src="./image/reservation/user.svg" alt="user-logo" class="reserv-form__input-logo">
+								<input type="text" tabindex="1" class="reserv-form__input" name="Name">
+							</div>
+							<div class="reserv-form__input-wrapper">
+								<p class="reserv-form__input-title">Email:</p>
+								<img src="./image/reservation/mail.svg" alt="mail-logo" class="reserv-form__input-logo">
+								<input type="text" tabindex="2" class="reserv-form__input" name="Email">
+							</div>
+							<div class="reserv-form__input-wrapper">
+								<p class="reserv-form__input-title">Date:</p>
+								<img src="./image/reservation/date.svg" alt="date-logo" class="reserv-form__input-logo">
+								<input type="date" tabindex="3" class="reserv-form__input" name="Date">
+							</div>
+						</div>
+						<div class="reserv-form__collumn">
+							<div class="reserv-form__input-wrapper">
+								<p class="reserv-form__input-title">Phone:</p>
+								<img src="./image/reservation/phone.svg" alt="phone-logo" class="reserv-form__input-logo">
+								<input type="tel" tabindex="4" class="reserv-form__input" name="Phone">
+							</div>
+							<div class="reserv-form__input-wrapper">
+								<p class="reserv-form__input-title">Number of people:</p>
+								<img src="./image/reservation/users.svg" alt="people-logo" class="reserv-form__input-logo">
+								<input type="number" tabindex="5" class="reserv-form__input" name="Number">
+							</div>
+							<div class="reserv-form__input-wrapper">
+								<p class="reserv-form__input-title">Time:</p>
+								<img src="./image/reservation/clock.svg" alt="time-logo" class="reserv-form__input-logo">
+								<input type="time" tabindex="6" class="reserv-form__input" name="Time">
+							</div>
+						</div>
+					</div>
+					<button type="submit" class="reserv-page__btn">
+						Reservation Now
+					</button>
+				</form>
+
+		</main>
+		<footer class="reserv-footer footer">
+			<div class="text-wrapper">
+				<div class="footer__text reserv-footer__text">
+					Reseravtions can be hold for 15 mins.We won't refund if cancellation is done after 15 mins of hold,
+					however cancellation within 15 mins would be refunded.
+				</div>
+			</div>
+			<div class="footer__line"></div>
+		</footer>
+	</div>
+
+</body>
+
+</html>
